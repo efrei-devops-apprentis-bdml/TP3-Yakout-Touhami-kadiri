@@ -18,7 +18,7 @@ with app.app_context():
         if response.status_code != 200:
             return jsonify({
                 'status': 'error',
-                'message': 'La requête à l\'API météo n\'a pas fonctionné. Voici le message renvoyé par l\'API : {}'.format(data)
+                'message': 'Erreur '.format(data)
             }), 500
 
         return jsonify({
