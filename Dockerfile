@@ -1,10 +1,7 @@
-FROM python:3.8 
-RUN apt update 
-RUN apt install python3   
+FROM python:3.8-alpine
+RUN mkdir /app
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+CMD ["python", "tp_devops.py"]
 
-WORKDIR /Users/yaksouTk/Desktop/DockerFiles/Dockerfile  
-COPY tp_devops.py ./ 
-COPY requirements.txt . 
-RUN pip install -r requirements.txt  
-
-CMD [ "python3", "./tp_devops.py" ]
