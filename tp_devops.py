@@ -18,7 +18,7 @@ with app.app_context():
         if response.status_code != 200:
             return jsonify({
                 'status': 'error',
-                'message': 'Erreur '.format(data)
+                'message': 'Erreur ! '.format(data)
             }), 500
 
         return jsonify({
