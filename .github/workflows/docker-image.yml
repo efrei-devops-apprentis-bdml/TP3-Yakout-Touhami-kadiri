@@ -36,7 +36,7 @@ jobs:
         with:
           resource-group: ${{ secrets.RESOURCE_GROUP }}
           dns-name-label: devops-20190780
-          image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/tp3:v1
+          image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/TP3-Yakout-Touhami-kadiri:v1
           registry-login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
           registry-username: ${{ secrets.REGISTRY_USERNAME }}
           registry-password: ${{ secrets.REGISTRY_PASSWORD }}
